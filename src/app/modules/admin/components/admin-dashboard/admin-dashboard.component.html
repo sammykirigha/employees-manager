@@ -1,0 +1,18 @@
+<div class="w-full h-full">
+  <div class="header">
+    <app-header></app-header>
+  </div>
+  <div class="main-container flex h-[70vh]">
+    <div
+      class="side-nav w-[300px] min-w-[230px] bg-[#113c60] text-white shadow-lg"
+    >
+      <app-side-nav></app-side-nav>
+    </div>
+    <div class="main p-[30px]">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="ml-[300px] mt-[150px]">
+    <app-footer></app-footer>
+  </div>
+</div>

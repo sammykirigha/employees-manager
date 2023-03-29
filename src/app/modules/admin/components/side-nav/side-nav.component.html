@@ -1,0 +1,58 @@
+<div
+  class="side-nav w-[300px] min-w-[230px] bg-[#113c60] text-gray-400 h-[85.5vh] xl:h-[88.5vh]"
+>
+  <div class="nav-items flex flex-col mt-12">
+    <div
+      class="nav-item flex gap-3 cursor-pointer hover:bg-[#043761] pl-10 py-3"
+      routerLinkActive="active"
+    >
+      <fa-icon [icon]="faDashboard" [classes]="['icon-styles']"></fa-icon>
+      <a class="text-gray-400 text-[1.1rem] font-[600]" routerLink="./users"
+        >Users
+      </a>
+    </div>
+    <div
+      class="nav-item flex gap-3 cursor-pointer hover:bg-[#043761] pl-10 py-3"
+      routerLinkActive="active"
+    >
+      <fa-icon [icon]="faUsers"></fa-icon>
+      <a
+        class="text-gray-400 text-[1.1rem] font-[600]"
+        routerLink="./create-user"
+        >Create User
+      </a>
+    </div>
+    <div
+      class="nav-item flex gap-3 cursor-pointer hover:bg-[#043761] pl-10 py-3"
+      routerLinkActive="active"
+    >
+      <fa-icon [icon]="faUsers"></fa-icon>
+      <a class="text-gray-400 text-[1.1rem] font-[600]" routerLink="./employees"
+        >Employees
+      </a>
+    </div>
+    <div
+      class="nav-item flex gap-3 cursor-pointer hover:bg-[#043761] pl-10 py-3"
+      routerLinkActive="active"
+    >
+      <fa-icon [icon]="faUser"></fa-icon>
+      <a
+        class="text-gray-400 text-[1.1rem] font-[600]"
+        routerLink="./create-employee"
+        >Create Employees
+      </a>
+    </div>
+    <div
+      class="nav-item flex gap-3 cursor-pointer hover:bg-[#043761] pl-10 py-3"
+      routerLinkActive="active"
+    >
+      <fa-icon [icon]="faUser"></fa-icon>
+      <a
+        (click)="logout()"
+        class="text-gray-400 text-[1.1rem] font-[600]"
+        routerLink="./create-employee"
+        >Logout
+      </a>
+    </div>
+  </div>
+</div>

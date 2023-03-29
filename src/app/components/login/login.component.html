@@ -1,0 +1,61 @@
+<div class="login shadow-lg bg-white mx-auto w-[500px] mt-20 rounded-lg">
+  <div class="icon flex items-center justify-center !pt-3">
+    <fa-icon [icon]="faLock" class="mx-aut fa-3x"></fa-icon>
+  </div>
+  <div class="welcome flex flex-col items-center mt-3">
+    <h1 class="header text-[1.7rem] text-gray-900 font-[600]">Welcome</h1>
+    <div class="p text-[1.1rem] text-gray-400">
+      Please enter your login details
+    </div>
+  </div>
+  <form
+    [formGroup]="loginForm"
+    (ngSubmit)="onSubmit()"
+    class="inputs mx-20 mt-12 pb-6"
+  >
+    <div>
+      <label
+        for="Email"
+        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >Email</label
+      >
+      <input
+        type="text"
+        id="Email"
+        formControlName="email"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        placeholder="Email"
+        required
+      />
+    </div>
+    <div class="mt-7">
+      <label
+        for="password"
+        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >Password</label
+      >
+      <input
+        type="password"
+        id="password"
+        formControlName="password"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        placeholder="Password"
+        required
+      />
+    </div>
+    <input
+      type="submit"
+      class="mt-10 bg-blue-600 border border-gray-300 text-white text-sm rounded-lg block w-full p-2.5"
+      required
+      value="Login"
+    />
+  </form>
+
+  <div
+    class="bg-gray-100 py-3 flex items-center justify-end pr-20 rounded-b-lg"
+  >
+    <small class="text-blue-600 cursor-pointer"
+      ><a routerLink="../forgot-password">Forget Password?</a></small
+    >
+  </div>
+</div>
